@@ -1,0 +1,67 @@
+@import '_vars.scss';
+@import '_colors.scss';
+
+body {
+  @extend %baseSettings;
+
+  .head {
+    @extend %topbottom;
+
+    .headText {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: $cultured;
+        font-size: 2em;
+      }
+    }
+
+    .nav {
+      @extend %navSettings;
+
+      a {
+        margin: 10px;
+        text-decoration: none;
+        color: $cultured;
+        border: 3px solid transparent;
+        border-radius: 3px;
+        transition: 0.5s ease-in-out;
+      }
+
+      a:hover {
+        color: $harvest;
+        border-bottom: 3px solid $harvest;
+      }
+
+      #active {
+        border-bottom: 3px solid $harvest;
+      }
+    }
+  }
+
+  .foot {
+    @extend %topbottom;
+    border: 1px solid black;
+
+    .footText {
+      color: $charcoal;
+    }
+
+    .nav {
+      @extend %navSettings;
+      font-size: 1em;
+    
+      a {
+        text-decoration: none;
+        margin: 6px;
+        color: $charcoal;
+        transition: 0.5s ease-in-out;
+      }
+
+      a:hover {
+        color: $cultured;
+      }
+    }
+  }
+}

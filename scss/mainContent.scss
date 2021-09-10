@@ -1,0 +1,25 @@
+@import '_colors.scss';
+%base-mainC {
+    display:flex;
+    padding:5px;
+    img {
+        border-radius: 5px;
+        box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.22);
+    }
+}
+
+.main {
+    h2 {
+        color:$harvest;
+    }
+    .intro{
+        @extend %base-mainC;
+    }
+    .wii {
+        @extend %base-mainC;
+        flex-direction: row-reverse;
+    }
+    .doubledash {
+        @extend %base-mainC;
+    }
+}
