@@ -1,11 +1,21 @@
 @import '_colors.scss';
+
 %base-mainC {
     display:flex;
-    padding:5px;
+    padding:10px 5px;
+    justify-content: space-around;
     img {
-        border-radius: 5px;
+        border-radius: 10px;
         box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.22);
+        width: 400px;
+        height: 350px;
     }
+}
+
+%text-pos {
+    display:flex;
+    width: 50%;
+    flex-direction: column;
 }
 
 .main {
@@ -14,12 +24,29 @@
     }
     .intro{
         @extend %base-mainC;
+        .textMain {
+            @extend %text-pos
+        }
     }
     .wii {
         @extend %base-mainC;
         flex-direction: row-reverse;
+        .textWii {
+            @extend %text-pos;
+            h2 {
+                align-self:flex-end;
+            }
+        }
     }
     .doubledash {
         @extend %base-mainC;
+        .textDoubledash {
+            @extend %text-pos
+        }
+    }
+}
+@media screen and (max-width:830px) {
+    %base-mainC {
+        flex: column;
     }
 }
