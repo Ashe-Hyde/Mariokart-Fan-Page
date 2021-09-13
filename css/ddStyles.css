@@ -1,0 +1,47 @@
+.container, .imageColumn, .mainDD {
+  display: flex;
+  justify-content: center;
+}
+.container img, .imageColumn img, .mainDD img {
+  width: 100%;
+}
+.container .imageM, .imageColumn .imageM, .mainDD .imageM {
+  border-top: 30px solid #B42318;
+  border-bottom: 30px solid #B42318;
+  width: 1180px;
+}
+.container .image1, .imageColumn .image1, .mainDD .image1 {
+  width: 300px;
+}
+.container .image2, .imageColumn .image2, .mainDD .image2 {
+  width: 300px;
+}
+.container .image3, .imageColumn .image3, .mainDD .image3 {
+  width: 300px;
+}
+.container .charSelect, .imageColumn .charSelect, .mainDD .charSelect {
+  width: 50%;
+}
+
+.mainDD {
+  width: 1200px;
+}
+.mainDD .image1 {
+  width: 100%;
+}
+
+.aboutdd {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 10px;
+}
+.aboutdd h2 {
+  color: #D09439;
+}
+
+.charSelect {
+  width: 20%;
+}
+
+/*# sourceMappingURL=ddStyles.css.map */

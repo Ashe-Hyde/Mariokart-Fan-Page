@@ -18,6 +18,12 @@
     flex-direction: column;
 }
 
+%media-Q{ 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
 .main {
     h2 {
         color:$harvest;
@@ -25,8 +31,9 @@
     .intro{
         @extend %base-mainC;
         .textMain {
-            @extend %text-pos
+            @extend %text-pos;
         }
+        
     }
     .wii {
         @extend %base-mainC;

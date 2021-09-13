@@ -1,0 +1,66 @@
+@import '_colors.scss'; 
+
+%base-dd {
+        display:flex;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+
+        .imageM {
+            border-top: 30px solid #B42318;
+            border-bottom: 30px solid #B42318;
+            width: 1180px;
+        }
+
+        .image1 {
+            width: 300px;
+        }
+
+        .image2 {
+            width: 300px;
+        }
+
+        .image3 {
+            width: 300px;
+        }
+        .charSelect {
+            width: 50%;
+        }
+    }
+
+    
+
+.mainDD {
+    @extend %base-dd;
+    width: 1200px;
+    .image1 {
+        width: 100%;
+    }
+}
+
+
+.imageColumn {
+    @extend %base-dd;
+}
+
+.container {
+    @extend %base-dd;
+}
+
+
+
+
+.aboutdd {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    h2 {
+        color: $harvest
+    }
+    padding: 10px;
+}
+
+.charSelect {
+    width: 20%;
+}
